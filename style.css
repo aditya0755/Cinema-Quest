@@ -202,7 +202,7 @@ main{
 .search-section .form-details{
     width: 50%;
     float:right;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     color: antiquewhite;
 }
 
