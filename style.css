@@ -47,12 +47,11 @@ body {
     font-family: "Monoton", sans-serif;
     letter-spacing: 3px;
     width: 20rem;
-    
+    float: right;
 }
 
 .marquee{
-    float: right;
-    margin-right: 10rem;
+    margin-right: 5rem;
     padding: 1.5em 0;
     border-radius: 2rem;
     text-shadow: 3px 5px 20px white;
@@ -106,7 +105,7 @@ body {
 
 .sidebar .icon:hover{
     border-radius: 1rem;
-            box-shadow: 0px 0px 5px 2px white;
+    box-shadow: 0px 0px 5px 2px white;
 }
 
 
@@ -124,7 +123,7 @@ main{
 
 .center-point{
     width: 100%;
-    min-height: 80vh;
+    min-height: 55vh;
     background: linear-gradient(to bottom ,  rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0.768)) , url(./img/bg5.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -170,7 +169,7 @@ main{
 .search-section{
     background:linear-gradient(to top , rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0.768)) ,url(./img/c13.jpg);
     width: 100%;
-    min-height: 80vh;
+    min-height: 50vh;
     background-size:cover;
     background-position:center;
 } 
@@ -205,6 +204,7 @@ main{
     width: 50%;
     float:right;
     padding-top: 2rem;
+    color: antiquewhite;
 }
 
 .search-section .form input[type="text"]{
@@ -227,9 +227,9 @@ main{
 
 /* #####search-section list styling###### */
 
-.search-section .items{
+/* .search-section .items{
     padding-top: 1rem;
-}
+} */
 
 .search-section .items li{
     padding:0.5rem;
@@ -242,7 +242,7 @@ main{
 .search-section .decor{
     box-shadow: 5px 5px 20px white;
     padding-right: 1rem;
-    margin-right:5rem ;
+    margin:2rem ;
     border-radius: 1rem;
     background-color: #1515156b;
 }
@@ -279,5 +279,38 @@ main{
 
 .footer .social-media-links i{
     padding: 1rem 0px 1rem 1rem;
+}
+
+@media (max-width:630px){
+    html{
+        font-size: 50%;
+    }
+
+    .search-section .poster{
+         max-width: 100%;
+        min-width: 35%;
+        width: calc();
+        height: 80vh; 
+        float: none;
+    }
+
+    .search-section .form-details{
+        float:none;
+        /* text-align: center; */
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .search-section .form-details{
+        width: 100%;
+        float:none;
+        padding-top: 2rem;
+    }
+
+    .search-section .decor{
+        box-shadow: 5px 5px 20px white;
+        border-radius: 1rem;
+        background-color: #1515156b;
+    }
 }
 
