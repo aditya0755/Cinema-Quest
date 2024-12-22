@@ -8,7 +8,7 @@ const jokediv = document.querySelector('.joke-decor');
 
 const getMovieInfo = async (movie)=>{
     const myApiKey="bfd0e8b6";
-    const url=`http://www.omdbapi.com/?apikey=${myApiKey}&t=${movie}`;
+    const url=`https://www.omdbapi.com/?apikey=${myApiKey}&t=${movie}`;
 
     const response = await fetch(url);
     const data= await response.json();
