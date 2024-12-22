@@ -12,7 +12,7 @@ const getMovieInfo = async (movie)=>{
 
     const response = await fetch(url);
     const data= await response.json();
-
+    console.log(data);
     showMovieData(data);
     getMoviePoster(data.imdbID);
 }
