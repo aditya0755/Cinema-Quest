@@ -67,11 +67,13 @@ const showMovieData = (data)=>{
         jokediv.appendChild(p);
  }
 
-searchForm.addEventListener('submit',()=>{
+searchForm.addEventListener('submit',(e)=>{
+    e.preventDefault();
     const movieName=inputbox.value.trim();
     if(movieName!== ''){
-        getjoke();
+        console.log(movieName);
         getMovieInfo(movieName);
+        getjoke();
     }
 
 });
