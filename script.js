@@ -67,8 +67,6 @@ const showMovieData = (data)=>{
         jokediv.appendChild(p);
  }
 
- getjoke();
-
 searchForm.addEventListener('submit',()=>{
     const movieName=inputbox.value.trim();
     if(movieName!== ''){
@@ -77,3 +75,5 @@ searchForm.addEventListener('submit',()=>{
     }
 
 });
+
+getjoke();
