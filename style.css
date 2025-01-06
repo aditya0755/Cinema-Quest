@@ -140,6 +140,7 @@ main{
     text-align: center;
     text-decoration:underline;
     color: #eaecee;
+    word-spacing: .5rem;
     
 }
 
@@ -213,7 +214,9 @@ main{
    display: block;
    font-size: 1.5rem;
    border-radius: 1rem;
-
+   background-color: black;
+   font-family: "Monoton", sans-serif;
+   text-align: center;
 }
 
 .search-section .form button{
@@ -222,6 +225,11 @@ main{
     padding: .7rem;
     font-size: 1.5rem;
     border-radius: 1rem;
+}
+
+.search-section .form button:hover{
+    color: white;
+    background-color: black;
 }
 
 /* #####search-section list styling###### */
@@ -262,7 +270,8 @@ main{
     text-align: center;
     padding: 6rem 6rem 6rem 6rem;
     font-size: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
 }
 
 

@@ -27,7 +27,7 @@ const getMoviePoster = async (id)=>{
 }
 
 const getjoke = async ()=>{
-    const url=`https://geek-jokes.sameerkumar.website/api?format=json`;
+    const url=`https://v2.jokeapi.dev/joke/Programming,Dark,Spooky?blacklistFlags=religious,sexist&type=single`;
     const response = await fetch(url);
     const data= await response.json();
     showjoke(data);
